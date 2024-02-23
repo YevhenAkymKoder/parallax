@@ -1,6 +1,41 @@
 body {
    margin: 0px;
 }
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+
+.wrapper {
+    width: 1060px;
+    margin: 0 auto;
+}
+.infobox1 {
+    background-color: #111111;
+    width: 100%;
+    height: 100%;
+}
+.info_wrapper {
+    background-color: #111111;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:flex-start;
+    justify-content:space-between;
+    flex-direction: row;
+    width: 1060px;
+    height: 300px;
+}
+.info_1 {
+  width: 33%;
+  color: #ffffff;
+  padding: 10px 15px 10px 15px;
+}
 
 .img1 {
     display: flex;
@@ -15,20 +50,56 @@ body {
 }
 
 .img2 {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+
     background: url(bilder2.jpg) no-repeat;
     height: 100vh;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
-
+.section2 {
+    display: block;
+    margin: 0px auto;
+    height: 400px;
+}
 .img3 {
     background: url(bilder3.jpg) no-repeat;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    height:300px;
+    width: 33%;
+    background-size:cover;
+    background-position: left;
+    background-attachment:local;
 }
+
+.img4 {
+    background: url(bilder4.jpg) no-repeat;
+    height:300px;
+    width: 33%;
+    background-size: cover;
+    background-position: top;
+    background-attachment: local;
+}
+
+.img5 {
+    background: url(bilder5.jpg) no-repeat;
+    height:300px;
+    width: 33%;
+    background-size: cover;
+    background-position: right;
+    background-attachment: local;
+}
+
+.bold  {
+    font-weight: bold;
+    color: #ffffff;
+    padding: 15px;
+    background-color: #333333;
+    opacity: 0.75;
+  }
+
 .section {
     display: flex;
     justify-content: center;
@@ -40,15 +111,26 @@ body {
     text-align: center;
 
 }
-.section h2 {
+.section0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100px;
+    background: #111111;
+    padding: 30px;
+    text-align: center;
+
+}
+.section h2, .section0 h2 {
     color: white;  
     font-weight: 600;
-    font-size: 36px;
+    font-size: 32px;
 
 }
 .section p {
     color: #e0e0e0;    
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
 
 }
@@ -62,4 +144,14 @@ body {
     color: white;  
     font-weight: 600;
     font-size: 36px;
+}
+
+
+footer {
+    width: 100%;
+    background-color: #111111;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 10px;
+    text-align: center; 
 }
